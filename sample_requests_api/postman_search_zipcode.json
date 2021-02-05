@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "8861b8cc-24bb-4699-a630-dd02bd7b4300",
+		"name": "Search Zipcode API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LoginUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "CreateUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "testeApi",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MTI2MzUxNjZ9.z0dvFIkCWuE_hG6jsmNKKbHxr9Nfwgy3Z1Kqqrfn1kQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/test",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cep",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MTI2MzUxNjZ9.z0dvFIkCWuE_hG6jsmNKKbHxr9Nfwgy3Z1Kqqrfn1kQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/cep?zipcode=62795000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cep"
+					],
+					"query": [
+						{
+							"key": "zipcode",
+							"value": "62795000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
