@@ -1,11 +1,15 @@
 class GetAddressByZipcode
   attr_reader :zipcode
 
+  def self.call(*args)
+    new(*args).perform
+  end
+
   def initialize(zipcode)
     @zipcode = clear_zipcode(zipcode)
   end
 
-  def call
+  def perform
     if zipcode_valid?
       CepLa::SearchZip.call(@zipcode)
     else

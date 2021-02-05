@@ -28,6 +28,7 @@ end
 
 group :test do
   gem 'vcr'
+  gem 'shoulda-matchers', require: false
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
