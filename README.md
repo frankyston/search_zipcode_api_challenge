@@ -13,8 +13,9 @@ Postgresql 10 ou superior
 2. Tenha certeza que esteja usando o `ruby 2.7.2` e o `rails 6.1.1`, caso contrario instale na sua máquina.
 3. Em `config/database.yml` você deve configurar seu usuário e senha do banco de dados.
 4. Execute `rails db:setup` e assim será criado o banco de dados e suas migrações.
+5. Execute `rails s` ou `rails server` para iniciar a API.
 
-# Test
+# Tests
 
 Neste projeto existe os testes implementados para as necessidades dos requisitos. Para executar os teste digite `rspec` ou `rspec spec`.
 
@@ -82,7 +83,7 @@ Ao realizar a requisição, poderá recebe duas respostas:
 }
 ```
 
-Para testar de forma mais simples, segue dois arquivos para importar no Insominia ou no Postman.
+Para testar de forma mais simples, segue dois arquivos para importar no Insominia ou no Postman. Basta importar e realizar os testes.
 
 [Insominia](sample_requests_api/insomnia_search_zipcode.json)
 
