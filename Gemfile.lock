@@ -77,12 +77,18 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.4.4)
     erubi (1.10.0)
+    factory_bot (6.1.0)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.1.0)
+      factory_bot (~> 6.1.0)
+      railties (>= 5.0.0)
     ffaker (2.17.0)
     ffi (1.14.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.8)
       concurrent-ruby (~> 1.0)
+    jwt (2.2.2)
     listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -194,7 +200,9 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   devise
+  factory_bot_rails
   ffaker
+  jwt
   listen (~> 3.3)
   pg (~> 1.1)
   pry-rails
